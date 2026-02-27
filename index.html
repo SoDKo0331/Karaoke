@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NARBAR | Avant-Garde Nightlife</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Space+Grotesk:wght@300;400;500;700&amp;family=Italianno&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#000000",
+                        "background-light": "#f2f2f2",
+                        "background-dark": "#0a0a0a",
+                        "text-light": "#1a1a1a",
+                        "text-dark": "#e5e5e5",
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Space Grotesk"', 'sans-serif'],
+                        script: ['"Italianno"', 'cursive'],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0px", 
+                    },
+                    spacing: {
+                        '128': '32rem',
+                    }
+                },
+            },
+        };
+    </script>
+<style>
+        .stroke-text {
+            -webkit-text-stroke: 1px currentColor;
+            color: transparent;
+        }
+        .mix-blend-diff {
+            mix-blend-mode: difference;
+        }
+        .grain-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 50;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+        }::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f2f2f2;
+        }
+        .dark ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1a1a1a;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #e5e5e5;
+        }
+        .hairline {
+            height: 1px;
+            width: 100%;
+            background-color: currentColor;
+            opacity: 0.2;
+        }
+        .vertical-hairline {
+            width: 1px;
+            height: 100%;
+            background-color: currentColor;
+            opacity: 0.2;
+            position: absolute;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-sans antialiased transition-colors duration-300">
+<div class="grain-overlay"></div>
+<nav class="fixed top-0 w-full z-40 px-6 py-6 mix-blend-difference text-white">
+<div class="flex justify-between items-center text-xs tracking-[0.2em] font-sans uppercase">
+<div>NB.</div>
+<div class="hidden md:flex gap-12">
+<a class="hover:line-through decoration-1" href="#">The Vibe</a>
+<a class="hover:line-through decoration-1" href="#">The Scene</a>
+<a class="hover:line-through decoration-1" href="#">Lineup</a>
+<a class="hover:line-through decoration-1" href="#">Bookings</a>
+</div>
+<div>Menu</div>
+</div>
+</nav>
+<header class="relative h-screen w-full overflow-hidden flex flex-col justify-end items-center bg-black">
+<div class="absolute inset-0 w-full h-full">
+<img alt="Dark brutalist lounge interior with dramatic lighting" class="w-full h-full object-cover opacity-80 filter grayscale contrast-125 brightness-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaogIKPkZ4y5m8U1jcv-5wXT-_rCwmrlujg3pTtuYrH-o5QbbBpgORAIfixqJ2MRjisiZKPXrVhWVwiSEdQ86Gip_gcNIyHULo2lXo4OMx1a9jDfooxazbWnVSULbW5EvG3dBR1AccrkwQcjsJVU_WwNrP3DMh0Grnqlr3XSaSiC2Rdwc80-4ZTVBlBkj_UM_EXDGsbKGFQ5FS3gLlFgzzDE2I5eYbBAX6b-Tp02ukI18kSvPYqi8qf5MqjIv6r0u_SKe54JVW0Cae"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-light dark:from-background-dark via-transparent to-transparent opacity-90 h-1/3 bottom-0"></div>
+</div>
+<div class="relative z-10 w-full px-4 md:px-12 pb-12 md:pb-0">
+<h1 class="font-serif text-[18vw] leading-[0.8] tracking-tighter text-center select-none stroke-text text-white dark:text-white uppercase transform translate-y-[10%]">
+                Narbar
+            </h1>
+</div>
+</header>
+<section class="relative w-full px-6 md:px-12 py-24 overflow-hidden border-t border-black/10 dark:border-white/10">
+<div class="hidden md:block absolute left-1/3 top-0 bottom-0 w-px bg-current opacity-10"></div>
+<div class="hidden md:block absolute right-1/4 top-0 bottom-0 w-px bg-current opacity-10"></div>
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+<div class="md:col-span-4 relative">
+<h2 class="font-serif text-7xl md:text-8xl mb-8 leading-none">THE<br/>VIBE</h2>
+<p class="font-sans text-sm tracking-wide uppercase mt-4 mb-12 max-w-[200px] border-l border-current pl-4 opacity-70">
+                        Sensory journeys.<br/>
+                        Minimalism.<br/>
+                        High-culture.<br/>
+<span class="font-bold">Raw expression.</span>
+</p>
+<div class="aspect-square w-full bg-black dark:bg-white overflow-hidden relative mt-12 grayscale">
+<img alt="Abstract architectural shadows" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyTkqrZdr6Pn6NDsVwNPGDMc46iNwqH7yVf5veqYQBdhfjNJQZglZOIEYOecKcmp6QFWfFge34KnN8F47AzKoGfXLjzeJRQKIAXsssAL27fZZtSWJQSsnmWAC1JR_fS2YJBP63IFJDr7aMVudH-mtb5cWpSInPerz7yk6RmdaU0caku71Fi65yVPoWID4hmWA6TRHyoTIYopDECjfnKMQP37xitJn2sKFMj6JkTMxn1_BU3HgIjr83fSSFv-v2RHtLdbiP0tirljNi"/>
+</div>
+</div>
+<div class="md:col-span-8 flex flex-col gap-16 pt-0 md:pt-24 relative">
+<span class="absolute -top-10 left-0 font-script text-8xl opacity-40 z-10 rotate-[-5deg]">extraordinary</span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+<div class="md:col-span-2">
+<h3 class="font-sans text-xl font-bold mb-4">A raw expression of nightlife culture.</h3>
+<p class="font-serif text-2xl md:text-3xl leading-snug opacity-90">
+                                Where the avant-garde meets the underground. A sanctuary for sound, taste, and the darker side of elegance.
+                             </p>
+</div>
+<div class="md:col-span-2 mt-8 relative group">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all z-10 pointer-events-none"></div>
+<img alt="Band performance silhouette" class="w-full h-[500px] object-cover filter grayscale contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGkkA58Zb5w_I9NBTWvmNsNDdyLehvsua5-nkFD-Rq04bnQeGcOP9pFr1_9ewq6r2R9TPV3EEa1tsRTu7bi-DsfwawWQ0Z3-q2acvVE_HyyIeIpbOynWJ-3BSMDNp80DG2XTPHPZixuQwMTskn6mp9ZbimJLaPSwBLf40ZnszrOaMFGDvsxeOHauim3NJCHl9rLyG0c3nm3PsBROXukiENUlU13l9G8cgvfoohQMH-htzMciRt_jKitT2nXlo0o6jmXbOXXhl6ue3d"/>
+<div class="absolute bottom-4 left-4 z-20 text-white mix-blend-difference">
+<span class="block font-sans text-xs tracking-[0.3em] uppercase">Artist in Residence</span>
+<span class="block font-serif text-4xl italic">Velin &amp; The Lemons</span>
+</div>
+</div>
+<div class="font-sans text-sm leading-relaxed opacity-70 text-justify">
+<p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do slusmod tempor incididunt ut labore et dolore st maltirve magna aliqua. Ut enim ad minlm veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<img alt="Dark bar texture" class="w-full h-32 object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_e3ujkN2qLlz6YoJBxkRPL7JP-HxeLcDHzkFYVdcQq9bp9wXmi_ilPMxN1F-lq2GGrb3_Qd9VzZ6Oe_7nkTRv3KHliVwBoQDQlC5tsD11GEIhPLC6bjd8Kvw67oJamNCRsDQSHVrX6FP0xnyJumCJfUq_NL8YiY3Tm0YUqIjwaXId49ztSN0uD0uyWwekKScKo_tN8TLmrp_UtHM2a67fEQtdGWGWnRDV7WOYI1duZqCx-BZxWTyTmhSp_9rVyRS6mOmiKcIfi7dl"/>
+<img alt="Crowd silhouettes" class="w-full h-32 object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlobkvBQPQZuM40IzvBbW1kN472wpo7VxhLn2Yttg_-1gMZVem4OtaTSJYKMt302Z4EyeXsjAlA5Pj1mpZANMzYdipaCOrwWBuQ8fabGIk4NFl4jKne0XOmSEClx6rq9DdLhd2QfRe4DwX-e06mACnd_nHlRBC7oM-pm_PYUedhXIkENEKVlybURT5XsKDmHAbeCEN7eot214k9yUYwDybv-OlhhDkgAmDZfEG5eSzhq3l5106Y6ObXIAeXyqxyPhd473wFDGOu3sV"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="relative w-full bg-black text-white dark:bg-background-light dark:text-black py-24 px-6 md:px-12 transition-colors duration-300">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-wrap justify-between items-end mb-16 border-b border-white/20 dark:border-black/20 pb-8">
+<h2 class="font-sans text-8xl md:text-9xl font-black tracking-tighter uppercase leading-[0.75]">Scene</h2>
+<div class="text-right mb-2">
+<p class="font-mono text-xs">ARCHIVE</p>
+<p class="font-mono text-xs">2024 COLLECTION</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[200px] md:auto-rows-[300px]">
+<div class="md:col-span-1 md:row-span-2 relative group overflow-hidden bg-gray-900">
+<img alt="Fashion model portrait" class="w-full h-full object-cover filter grayscale contrast-150 group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3s93NuRh39XzFEm31xZmibTsWOKPpiaG2zEhgtrTm7Bw_5QOIO8EYnJedhZuHSs-2sRJimVzpMX8keSNKhRjYGuw780G_f0BpmHuaonoaW-yYraZeDGUTBmL1Qkfvmyzn-9x_yuVOLnqoUMgYSNVIHn8ahzHRPzKAYkgLt3hFG0aLQIKFE_yFZwGNhix8HtriV6ZR32eM6goIdSWQ7ki8lKS9LQtpOiCDq-Bh-K82w9_me4ziTbvEhY7foQEtkXuAk2TWQP1T5XMU"/>
+<div class="absolute bottom-4 left-4 rotate-[-90deg] origin-bottom-left">
+<span class="font-mono text-xs bg-white text-black px-2 py-1">A-SOUND</span>
+</div>
+</div>
+<div class="md:col-span-1 md:row-span-1 relative group overflow-hidden">
+<img alt="Cocktail minimalist" class="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuIgCVm4HwLdQxIbl8TcG2RZMpdgmnRtiYpq5SZ4boAKtlTU3sRxWMwguKGJfpt2zQ7foH7_JeVuoJ9CePQbn7tsEXsTEw2xVlkcK3lflIb-q0WkRKx67JXxVqN8k7qbPuhkCct-86UaMBlplOIF4Wz3zN8VAshjLVwCV3EbA0b0MlJWGzCg7DZLAZruuoOO0bDXxy4uD4noIXhoerTkoC8_I-wgahDac6-CIu60Owa3srX2Wb9qcuI4VMjpF44O4DEc6FKAERwzkz"/>
+</div>
+<div class="md:col-span-2 md:row-span-2 relative bg-gray-800 flex items-center justify-center overflow-hidden">
+<img alt="Band performance energetic" class="w-full h-full object-cover grayscale contrast-125 hover:contrast-100 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQtp9xj8r6RNZEyyuzJTrZYijlkygZOrYtQVhYo9G_-XLW9gkPtCwVBiRDJTo_bDzU6uEhiGX2xHX-DZaUeGp-7gQXgWCRJcMtwgOCAqBZ6iaV5mmMJRMBrmUwqHMRauxxDJau_8QpKJAfs_QPDI9jd8BsXMqzdTot-LQrbHBeF4goVl28nI3rVPmct6UjMfeqUGdqvLeCEUo6bJoOLwT90j3ep66UE3Tg5dPyvpHGn5mh2T6dx9CPzn9m3xe_rQm-CyT1bHTfFfHb"/>
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center mix-blend-difference">
+<h3 class="font-serif italic text-6xl">The Colors</h3>
+</div>
+</div>
+<div class="md:col-span-1 md:row-span-2 relative overflow-hidden">
+<img alt="Singer with microphone" class="w-full h-full object-cover filter grayscale brightness-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5h5N4U9TLiWoba23vai9N1Di2WKxZ_7cHuXT8ZrtSUoRDKJLn2cUaZlQqLtD_4TCOLb5ZNJAwHUv6Psg_plHLIMHf10GxRbCznOUgk2HaW4MrET4D26GGt2V3VlFMDF6RnnUjIJbIdy2TcES7cTsQ1s7AhafA_F5lpg1699iFmGuuz3v0D7nP8IYtZv2zZROEOxSTUsXBqo488WyMqbELfueQx3zHcbd7flplSTMQ0QexLtMOqVnC2f8KMSkkTBZn6OfNvLE2Z_kF"/>
+<span class="absolute top-4 right-4 font-script text-5xl text-white opacity-80">live</span>
+</div>
+<div class="md:col-span-1 md:row-span-1 relative overflow-hidden group">
+<img alt="Surreal colorful landscape" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvm3JQQSrl6BNafCtiVdQ2yRO2YJhDZqfI1YEnoo2l_buuldR00Ax5Q-bnd7TWq9UH8CTTY_QA77ReefDYg2INdcOuO7nJ7LKY9ksRG1FbNa0vgZNTNcWyjtP7TR1Zi36cDPzRjKlQqfaSmQRBEzWO6EtMOUFD-odAxfxVkEptTR_Ob2-w3nT_yC7-j_DOMUSVRyUeZPEX_djbzFPca6KvBpJHM1zueLrSRHfLGiiMv_UrnbQZdBF0EKSPCS4F90t5EqdOQWaZLKIJ"/>
+<div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="font-sans font-bold tracking-widest text-white border border-white px-4 py-2">FLU.ID</span>
+</div>
+</div>
+<div class="md:col-span-2 md:row-span-1 relative overflow-hidden">
+<img alt="Minimalist seating" class="w-full h-full object-cover filter grayscale contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD710iuQjPnTEvnPgc4nfPpL5vuPCnb06OFLjgaHEprCVOuEhFGRxJhh8DiYSg_9sV9BtOvrNiiuSjVXjC1AbzcES01MOYLQnDhTBkEIV2_nkonftyqGEkASxk7rx8oRl7loa5SWbeuVxQvkqcaf7tkkIbjXB27WWjNtxuZwKxEpoEIoCvHhKwvAx3R6Kmpt5Li76UzsNhtDknvuCnu2JA-MaEh7NXeNbusGWVBO8UYi9AnYGXQfuuyca0sIJH92G3dIdYQee1_SFl2"/>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark border-t border-black dark:border-white">
+<div class="py-32 px-6 border-b border-black dark:border-white">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="font-serif text-6xl md:text-8xl mb-12">Subscribe</h2>
+<form class="flex flex-col md:flex-row gap-0 border border-current max-w-xl mx-auto">
+<input class="flex-grow bg-transparent border-none focus:ring-0 placeholder-current py-4 px-6 text-xs tracking-[0.2em] font-sans uppercase" placeholder="ENTER YOUR E-MAIL" type="email"/>
+<button class="px-8 py-4 border-t md:border-t-0 md:border-l border-current hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors" type="submit">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1"></path>
+</svg>
+</button>
+</form>
+</div>
+</div>
+<div class="w-full overflow-hidden bg-black text-white py-3 border-b border-white/20">
+<div class="whitespace-nowrap inline-flex animate-[marquee_20s_linear_infinite]">
+<span class="mx-4 text-xs tracking-[0.2em] font-sans uppercase">Subscribe to stay connected • Exclusive Updates • Event Invites • NARBAR • </span>
+<span class="mx-4 text-xs tracking-[0.2em] font-sans uppercase">Subscribe to stay connected • Exclusive Updates • Event Invites • NARBAR • </span>
+<span class="mx-4 text-xs tracking-[0.2em] font-sans uppercase">Subscribe to stay connected • Exclusive Updates • Event Invites • NARBAR • </span>
+</div>
+</div>
+<div class="relative py-24 px-6 overflow-hidden">
+<div class="absolute inset-x-0 bottom-0 text-center leading-none select-none pointer-events-none">
+<span class="font-sans font-black text-[18vw] uppercase opacity-100 tracking-tighter block text-center -mb-[4vw]">
+                    NARBAR
+                </span>
+<div class="flex justify-between px-12 -mt-[8vw] relative z-10 mix-blend-difference text-white dark:text-gray-300">
+<span class="font-serif italic text-[8vw]">studios</span>
+<span class="font-sans font-bold text-[8vw] uppercase">Agency</span>
+</div>
+</div>
+<div class="relative z-20 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start text-[10px] uppercase tracking-[0.2em] font-mono h-[30vw] md:h-auto pb-[15vw] md:pb-32">
+<div class="mb-8 md:mb-0">
+<a class="hover:underline block mb-2" href="#">Back to top ↑</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12 md:gap-24">
+<div class="flex flex-col gap-2">
+<span class="opacity-50 mb-2">Explore</span>
+<a class="hover:underline" href="#">Artists</a>
+<a class="hover:underline" href="#">Booking</a>
+<a class="hover:underline" href="#">About Us</a>
+<a class="hover:underline" href="#">Contacts</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="opacity-50 mb-2">Legal</span>
+<a class="hover:underline" href="#">Privacy Policy</a>
+<a class="hover:underline" href="#">Terms &amp; Conditions</a>
+<a class="hover:underline" href="#">Disclaimer</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="opacity-50 mb-2">Social</span>
+<a class="hover:underline" href="#">Instagram</a>
+<a class="hover:underline" href="#">Twitter / X</a>
+<a class="hover:underline" href="#">Soundcloud</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        tailwind.config.theme.extend.animation = {
+            'marquee': 'marquee 25s linear infinite',
+        }
+        tailwind.config.theme.extend.keyframes = {
+            'marquee': {
+                '0%': { transform: 'translateX(0%)' },
+                '100%': { transform: 'translateX(-100%)' },
+            }
+        }
+    </script>
+
+</body></html>
